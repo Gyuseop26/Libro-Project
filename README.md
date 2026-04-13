@@ -31,6 +31,13 @@
   + **도서관 이용자** : 웹/앱으로 도서관 이용자가 희망하는 도서를 픽업 요청할 수 있습니다. 또한 도서가 픽업되는 과정을 확인할 수 있습니다.
   + **도서관 관리자(사서)** : 웹을 통해 도서 관리, 도서관 이용자 관리를 할 수 있습니다. PyQt 기반 로봇 관제 UI로 현재 로봇의 위치 확인, 로봇의 작업 상태 확인, 로봇 긴급 정지와 재시작, 로그 관리를 할 수 있습니다.
 
+| ![Image 1](https://github.com/user-attachments/assets/4ff229b9-8387-4c3b-b8c4-da4db97f3a57) | ![Image 2](https://github.com/user-attachments/assets/0f8dd6ff-dc99-4c24-8ad2-2d25584f1eff) |
+| :---: | :---: |
+| **도서 검색** | **픽업존 배정** |
+| ![Image 3](https://github.com/user-attachments/assets/1b2a4f77-16c5-4a2e-bafa-bc0206ac719a) | ![Image 4](https://github.com/user-attachments/assets/74b5cef4-e128-4b56-a5cb-bb6dc93093ec) |
+| **픽업 트래킹** | **로봇 관제 UI** |
+
+
 + #### 도서 픽업(로봇팔)
   + 도서 픽업 명령이 들어오면 Libro(로봇팔)가 카메라로 도서의 중심 좌표와 ArucoMarker 값을 조합해 좌표 변환 기술을 통해 Pick and Place를 수행합니다.
   + 픽업이 완료된 도서는 이용자에게 배정된 픽업함에 책을 집어 넣습니다.
@@ -41,12 +48,12 @@
   + 이용자가 도서관 내 장소까지 안내 요청을 하면 가이드 작업을 수행합니다.
 
 ## 시나리오
-> 도서 픽업 시나리오
+> ### 도서 픽업 시나리오
 <p align="center">
   <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/d6e6ad6e-ee7a-4c9f-b213-421ee1af9802" />
 </p>
 
-> 길 안내 요청
+> ### 길 안내 요청
 <p align="center">
   <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/266e279c-f688-4baf-840d-e47a92870e28" />
 </p>
