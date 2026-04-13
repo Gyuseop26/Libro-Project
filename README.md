@@ -56,7 +56,7 @@
 
 | ![Image 1](https://github.com/user-attachments/assets/9f6f62a8-fa90-4646-90ca-439b029b360e) | ![Image 2](https://github.com/user-attachments/assets/e1e373ab-06a3-4163-aa57-23d1a48dee7a) |
 | :---: | :---: |
-| **마커 기반 오도메트리** | **길 안내** |
+| **Marker based Odom** | **길 안내** |
 | ![Image 3](https://github.com/user-attachments/assets/ca9f8694-b267-4e6b-9d2c-8d99f4695250) | ![Image 4](https://github.com/user-attachments/assets/c638f8ad-83b3-460b-9832-1091461c2033) |
 | **비상 정지** | **장애물 회피** |
 
