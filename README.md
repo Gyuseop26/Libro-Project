@@ -8,20 +8,11 @@
 + Libro 프로젝트는 도서관 사서의 반복 업무를 대신해 업무 부담을 줄이고 도서관 이용자에게는 편리를 제공합니다.
 
 ## 기술 스택
-### 💻 Development Environment & Languages
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/badge/ROS 2-22314E?style=for-the-badge&logo=ros&logoColor=white">
-
-* **Environment**: Ubuntu 24.04, ROS 2 (Jazzy), Arduino IDE
-* **Languages**: Python, C++, SQL, HTML
-
-### 🤖 Deep Learning & Data
-* **Framework**: YOLO 11 OBB, Paddle OCR
-* **DBMS**: PostgreSQL
-
-### 🌐 Web & GUI
-* **Frontend**: React, TypeScript, Tailwind CSS
-* **Backend**: FAST API, Node.js
-* **GUI**: PyQT
-
-### 🤝 Collaboration
-<img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"> <img src="https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white"> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+| Category | Skills |
+| :--- | :--- |
+| **Environment** | Ubuntu 24.04, ROS 2(Jazzy), Arduino IDE |
+| **Languages** | Python, C++, SQL, HTML |
+| **Deep Learning** | YOLO 11 OBB, Paddle OCR |
+| **DBMS / GUI** | PostgreSQL / PyQT |
+| **Frontend / Backend** | React, TypeScript, Tailwind CSS / FastAPI, Node.js |
+| **Collaboration** | Jira, Confluence, Git, Slack |
