@@ -31,9 +31,9 @@
   + **도서관 이용자** : 웹/앱으로 도서관 이용자가 희망하는 도서를 픽업 요청할 수 있습니다. 또한 도서가 픽업되는 과정을 확인할 수 있습니다.
   + **도서관 관리자(사서)** : 웹을 통해 도서 관리, 도서관 이용자 관리를 할 수 있습니다. PyQt 기반 로봇 관제 UI로 현재 로봇의 위치 확인, 로봇의 작업 상태 확인, 로봇 긴급 정지와 재시작, 로그 관리를 할 수 있습니다.
 
-| ![Image 1](https://github.com/user-attachments/assets/4ff229b9-8387-4c3b-b8c4-da4db97f3a57) | ![Image 2](https://github.com/user-attachments/assets/0f8dd6ff-dc99-4c24-8ad2-2d25584f1eff) |
+| ![Image 1](https://github.com/user-attachments/assets/4ff229b9-8387-4c3b-b8c4-da4db97f3a57) | ![Image 2](https://github.com/user-attachments/assets/c3108a44-6956-4d22-862b-159a1294da48) |
 | :---: | :---: |
-| **도서 검색** | **픽업존 배정** |
+| **도서 검색** | **길 안내 요청** |
 | ![Image 3](https://github.com/user-attachments/assets/1b2a4f77-16c5-4a2e-bafa-bc0206ac719a) | ![Image 4](https://github.com/user-attachments/assets/74b5cef4-e128-4b56-a5cb-bb6dc93093ec) |
 | **픽업 트래킹** | **로봇 관제 UI** |
 
@@ -42,10 +42,25 @@
   + 도서 픽업 명령이 들어오면 Libro(로봇팔)가 카메라로 도서의 중심 좌표와 ArucoMarker 값을 조합해 좌표 변환 기술을 통해 Pick and Place를 수행합니다.
   + 픽업이 완료된 도서는 이용자에게 배정된 픽업함에 책을 집어 넣습니다.
 
+| ![Image 1](https://github.com/user-attachments/assets/fd89d1fc-4691-4307-9f1e-1198d9437dd1) | ![Image 2](https://github.com/user-attachments/assets/900cedad-5007-4aa9-b6a2-4261bf74fc3f) | ![Image 3](https://github.com/user-attachments/assets/0808921f-b06e-4efb-94c6-fdd72f91297d) |
+| :---: | :---: | :---: |
+| **도서 픽업** | **바구니에 넣기** | **픽업함에 넣기** |
+
+
 + #### 길 안내/ 이동(주행로봇)
   + 도서 픽업 명령이 들어오면 Libro(주행로봇)가 해당 도서가 있는 책장까지 이동합니다.
   + 로봇팔로부터 책을 바구니에 담았다는 완료 메시지가 전달 되면 이용자에게 배정된 픽업함까지 이동합니다.
+  + 장애물이 나타났을 때 멈추고 장애물이 사라지면 다시 주행합니다.
   + 이용자가 도서관 내 장소까지 안내 요청을 하면 가이드 작업을 수행합니다.
+  + 충전이 필요하거나 작업이 완료되면 복귀합니다. 
+
+| ![Image 1](https://github.com/user-attachments/assets/9f6f62a8-fa90-4646-90ca-439b029b360e) | ![Image 2](https://github.com/user-attachments/assets/e1e373ab-06a3-4163-aa57-23d1a48dee7a) |
+| :---: | :---: |
+| **마커 기반 오도메트리** | **길 안내** |
+| ![Image 3](https://github.com/user-attachments/assets/ca9f8694-b267-4e6b-9d2c-8d99f4695250) | ![Image 4](https://github.com/user-attachments/assets/c638f8ad-83b3-460b-9832-1091461c2033) |
+| **비상 정지** | **장애물 회피** |
+
+---
 
 ## 시나리오
 > ### 도서 픽업 시나리오
@@ -64,6 +79,7 @@
 * Paddle OCR로 책 제목 추출
 * Googel Books API를 활용해 추출된 책 제목 보정
 * Book Recognition을 통해 ArucoMarker Z값 추출, 책 좌표 추출
+  + 2D 카메라로 한정된 상황에서 깊이 값을 인식하기 위해 ArucoMarker 사용
 * Libro Task Manager로 책 좌표 전달 후 ROS 통신으로 좌표와 픽업 명령
 * 카메라-로봇팔 좌표 변환을 거쳐 도서 픽업
 
