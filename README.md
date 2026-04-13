@@ -19,3 +19,11 @@
 
 ## SW Architecture
 <img width="900" height="600" alt="Libro SW Architecture" src="https://github.com/user-attachments/assets/84e2c5b4-81a0-43e2-b687-bcd7e4b48f6f" />
+
+## 시나리오
+> 도서 픽업 시나리오
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/d6e6ad6e-ee7a-4c9f-b213-421ee1af9802" />
+---
+> 길 안내 요청
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/266e279c-f688-4baf-840d-e47a92870e28" />
+
