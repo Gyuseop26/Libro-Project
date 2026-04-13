@@ -16,3 +16,6 @@
 | **DBMS / GUI** | PostgreSQL / PyQT |
 | **Frontend / Backend** | React, TypeScript, Tailwind CSS / FastAPI, Node.js |
 | **Collaboration** | Jira, Confluence, Git, Slack |
+
+## SW Architecture
+<img width="900" height="600" alt="Libro SW Architecture" src="https://github.com/user-attachments/assets/84e2c5b4-81a0-43e2-b687-bcd7e4b48f6f" />
