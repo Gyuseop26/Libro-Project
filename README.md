@@ -10,6 +10,8 @@
 ## 프로젝트 기간
 > **2025. 04. 07 ~ 2025. 05. 30 (약 8주)**
 
+## 프로젝트 영상
+[![Libro | 자율주행 도서 운반 로봇](https://img.youtube.com/vi/nQU4c1wk-lc/maxresdefault.jpg)](https://youtu.be/nQU4c1wk-lc)
 
 ## 기술 스택
 | Category | Skills |
